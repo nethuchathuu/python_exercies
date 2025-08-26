@@ -1,11 +1,19 @@
-file =open("data.txt", 'w')
+with open("data.txt", 'a') as file:
 
-x = [str(i * 2) for i in range(0,100)]
+    x = [str(i * 2) for i in range(0,100)]
 
-msg = "\n".join(x)
+    msg = "\n".join(x)
 
-print()
+    print()
 
-file.write(msg)
+    file.write(msg)
 
-file.close()
+'''
+r = read only
+w = write with truncate
+x = open for exclusive creation
+a = append
+b = binary
+t = text mode
++ = updating
+'''
