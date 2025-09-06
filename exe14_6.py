@@ -9,7 +9,20 @@ class Animal:
     def move(self):
         print("animal can move")
 
-class Dog(Animal):
+class Mamal:
+    def __init__(self):
+        print("I am a mamel")
+
+    def feed(self):
+        print("Drinking milk")
+
+
+class Cat(Animal, Mamal):
+    def _init__(self):
+        pass
+
+
+class Dog(Animal, Mamal):
     def __init__(self, name = "unknown"):
         super(Dog, self).__init__("Dog")
         print("Hello from dog")
@@ -27,4 +40,4 @@ class Dog(Animal):
         print(msg)
 
 dog1 = Dog("Scooby")
-dog1.talk()
+dog1.feed()
