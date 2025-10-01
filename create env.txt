@@ -1,0 +1,4 @@
+pip install vertualenv
+vertualenv envname
+env\Scripts\activate
+env\Scripts\deactivate.bat
